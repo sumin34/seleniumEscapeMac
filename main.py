@@ -98,7 +98,7 @@ try:
     macro_input.send_keys(Keys.ENTER)
 
     # 창이 꺼지지 않는 시간
-    time.sleep(6000)
+    time.sleep(5000)
 
 finally:
     # 브라우저 종료
