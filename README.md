@@ -27,7 +27,7 @@
   :gem:**해당 지점, 테마, 날짜, 시간 중 하나라도 불가능하면 프로그램이 종료됩니다.**:gem:
 
   ### **5. window + r cmd입력 후 다운받은 파일 경로로 들어가 의존성 설치하기**
-  #### **★좀 더 간단한 과정을 원하는 경우 [설치](https://www.jetbrains.com/ko-kr/pycharm/download/?section=windows) 및 맨 아래 참고**
+  #### **★좀 더 간단한 과정을 원하는 경우 [파이참 설치](https://www.jetbrains.com/ko-kr/pycharm/download/?section=windows) 및 맨 아래 참고**
   
 ![image](https://github.com/sumin34/seleniumEscapeMac/assets/73535327/d56f1d84-714e-412e-8021-fdbab1314e16)  
 
@@ -45,4 +45,10 @@
 ![image](https://github.com/sumin34/seleniumEscapeMac/assets/73535327/e56a0301-71ef-4fa9-b098-0ab67e3337a6)
 
        pip install .
+
+
+
+
+
+
 
