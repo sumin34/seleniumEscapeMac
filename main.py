@@ -1,12 +1,11 @@
 import time
 from selenium import webdriver
-import pyperclip as pyperclip
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import Select
+
 # service = Service(executable_path=r"C:\Users\jki00\PycharmProjects\seleniumEscapeMac\chromedriver.exe")
 service = Service(executable_path="./chromedriver.exe")
 # WebDriver 객체 생성
