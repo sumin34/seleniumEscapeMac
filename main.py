@@ -68,19 +68,25 @@ while retry_count < max_retries:
         try:
             # 시간 선택
             select_time = WebDriverWait(driver, 40).until(EC.presence_of_element_located((By.XPATH, "//li[contains(text(),'"+wanted_time+"')]")))
+            if 'impossible' in select_time.get_attribute('class'):
+                raise Exception("Select time is impossible")
             select_time.click()
-            time.sleep(5)
+            time.sleep(0.2)
         except:
             try:
                 sub_time = WebDriverWait(driver, 40).until(EC.presence_of_element_located((By.XPATH, "//li[contains(text(),'" + sub_time + "')]")))
+                if 'impossible' in sub_time.get_attribute('class'):
+                    raise Exception("Select time is impossible")
                 sub_time.click()
-                time.sleep(5)
+                time.sleep(0.2)
 
             except:
                 sub_sub_time = WebDriverWait(driver, 40).until(
                     EC.presence_of_element_located((By.XPATH, "//li[contains(text(),'" + sub_sub_time + "')]")))
+                if 'impossible' in sub_sub_time.get_attribute('class'):
+                    raise Exception("Select time is impossible")
                 sub_sub_time.click()
-                time.sleep(5)
+                time.sleep(0.2)
 
 
         reserve_start = driver.find_element(By.CLASS_NAME,"b").send_keys(Keys.ENTER)
